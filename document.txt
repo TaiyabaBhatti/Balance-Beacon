@@ -1,0 +1,11 @@
+login page bg imaga height = 1000px
+
+
+Edit profile page: button-bg: "bg-[#CBCBE7]" button-text:text-[#595880]"
+
+
+
+
+
+{/* About */}
+      <section className=" h-screen mb-10 -mt-24">

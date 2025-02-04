@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    html {
+      @apply text-lg;
+    }
+  
+    @media (max-width: 768px) {
+      html {
+        @apply text-base ;
+      }
+    }
+  
+    @media (max-width: 640px) {
+      html {
+        @apply text-xs;
+      }
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #CBCBE7; */
+    background:  #CBCBE7;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9c9bc0;
+}
+
+#note-popup::-webkit-scrollbar {
+    width: 10px;
+}
+#note-popup::-webkit-scrollbar-thumb {
+    background:  #e0e9c1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#note-popup::-webkit-scrollbar-thumb:hover {
+    background:  #7f8b52;
+}

@@ -1,0 +1,44 @@
+.logo-color{
+    color: #CBCBE7;
+}
+
+.light-purple-bg{
+    background-color: #CBCBE7;
+}
+
+.greysh-purple-bg{
+    background-color: #595880;
+}
+
+.greysh-purple-text{
+    color: #595880;
+}
+
+#root .ql-editor {
+    min-height: 18em;
+  }
+
+  #root .ql-container {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+  }
+  #root .ql-snow.ql-toolbar {
+    display: block;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    background: #eaecec;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  /* Bubble Theme */
+  /* #root .ql-bubble .ql-editor {
+    border: 3px solid red;
+    border-radius: 0.5em;
+  } */
+  
