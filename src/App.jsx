@@ -19,7 +19,6 @@ useEffect(()=>{
 
  return (
 <Router>
-  
 <Layout>
 <AppRoutePages/>
 </Layout>
