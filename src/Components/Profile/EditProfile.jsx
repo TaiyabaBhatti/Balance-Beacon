@@ -20,7 +20,6 @@ import {
 } from "firebase/firestore";
 import LoadingAnim from "../Common Components/LoadingAnim";
 import PatientProfile from "../Common Components/PatientProfile";
-import executeAlgorithm from "../../encrypt/encryption";
 
 const db = getFirestore(app);
 export default function EditProfile() {
@@ -65,7 +64,6 @@ export default function EditProfile() {
   }, []);
 
   const editProfile = async (data) => {
-    executeAlgorithm(data);
     setLoading(true);
 
     try {
