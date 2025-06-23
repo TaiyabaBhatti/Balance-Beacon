@@ -1,17 +1,17 @@
 import moment from "moment"
 
-export default function weeklyUserData(data,startOfWeek,endOfWeek){
+export default function weeklyUserData(data, startOfWeek, endOfWeek) {
 
 
 
-console.log("Entered",data)
+  console.log("Entered", data)
 
-const date = moment().format("YYYY-MM-DD")
+  const date = moment().format("YYYY-MM-DD")
 
 
-let filteredData = data.filter((emotionList) => {
+  let filteredData = data.filter((emotionList) => {
     // Check if the date is within the specified range
-    return moment(emotionList.date).isBetween(startOfWeek, endOfWeek, []);
+    return moment(emotionList.date).isBetween(startOfWeek, endOfWeek, 'day', []);
   }).map((emotionList) => {
     // Transform the data to include only the required fields
     return {
@@ -23,18 +23,18 @@ let filteredData = data.filter((emotionList) => {
   });
 
 
-const groupedData = {};
-filteredData.forEach((emotionList)=>{
-if(groupedData[emotionList.emotions]){
-    groupedData[emotionList.emotions] += 1;
-}
-else {
-    groupedData[emotionList.emotions] = 1;
-}
-})
-
-
-return groupedData;
-
-
+  const groupedData = {};
+  filteredData.forEach((emotionList) => {
+    if (groupedData[emotionList.emotions]) {
+      groupedData[emotionList.emotions] += 1;
     }
+    else {
+      groupedData[emotionList.emotions] = 1;
+    }
+  })
+
+
+  return groupedData;
+
+
+}

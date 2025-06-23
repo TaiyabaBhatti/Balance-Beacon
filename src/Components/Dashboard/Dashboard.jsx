@@ -6,11 +6,13 @@ import Wrapper from "../Common Components/Wrapper";
 import AuthContext from "../context/authContext";
 import LoadingAnim from "../Common Components/LoadingAnim";
 import Content from "../Common Components/Content";
+
 export default function Dashboard() {
   const { patientName, authSuccess } = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
+    // executeAlgorithm()
     setLoading(!patientName);
   }, [patientName, authSuccess]);
 

@@ -46,5 +46,6 @@ export default function AppRoutePages() {
   <Route path="/system-profiles" element={<ProtectedRoute><AllAlters/></ProtectedRoute>}/>
   <Route path="/system-profiles/add-alter" element={<ProtectedRoute><CreateAlter/></ProtectedRoute>}/>
   </Routes>
+
   )
 }

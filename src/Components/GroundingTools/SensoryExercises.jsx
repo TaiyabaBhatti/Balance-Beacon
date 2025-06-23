@@ -10,14 +10,6 @@ const [btnText,setBtnText] = useState("Play");
 
 let lottieRef  = useRef(null);
 
-useEffect(()=>{
-
-  // lottieRef.current.pause();
-
-
-
-
-},[])
 
 const actionPlayed = () =>{
 if(isActive){

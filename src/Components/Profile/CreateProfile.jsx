@@ -9,6 +9,7 @@ import {
   } from "firebase/auth";
   import { getFirestore, addDoc,collection,getDoc,doc, getDocs,setDoc } from "firebase/firestore";
 
+
   
 
 
@@ -32,6 +33,8 @@ export default function CreateProfile() {
       username: '',
     },
   });
+
+  
 
 useEffect(()=>{
   
@@ -73,7 +76,6 @@ const createProfile = async(data)=>{
 
   
  const profileDocRef = doc(db, "Users", currUser.uid, "profile", profileDocId || "");
-
   const status = await validatePassword(getAuth(), data.password);
 if(status.isValid){
 setValidStatus(true);
