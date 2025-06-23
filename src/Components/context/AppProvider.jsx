@@ -1,11 +1,6 @@
-import React from 'react'
-import AuthState from './authState'
+import React from "react";
+import AuthState from "./AuthState";
 
-
-export default function AppProvider({children}) {
-  return (
-    <AuthState>
-{children}
-    </AuthState>
-  )
+export default function AppProvider({ children }) {
+  return <AuthState>{children}</AuthState>;
 }

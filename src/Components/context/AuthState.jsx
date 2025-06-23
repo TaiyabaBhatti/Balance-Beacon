@@ -28,7 +28,7 @@ export default function AuthState(props) {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         setCurrUser(user);
-        console.log(user.uid);
+        // console.log(user.uid);
 
         try {
           const profileQuery = query(
